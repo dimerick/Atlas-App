@@ -1,0 +1,71 @@
+#main-section{
+    background-color: white;
+    background-image: url('../images/symphony.png');
+}
+#logo{
+    text-align: center;
+    padding: 20px;
+}
+#nom-project{
+    text-align: center;
+}
+#buttons-register{
+    text-align: center;
+    padding: 10px;
+}
+.btn-register{
+    margin-bottom: 7px;
+}
+#ini-session{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
+#head-page{
+    text-align: center;
+    color: white;
+    background: darkslateblue;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+#head-page>i{
+/*font-size: 24px;*/
+}
+#head-page>h3{
+    margin: 0;
+}
+#form-register{
+    padding: 20px;
+}
+#map{
+    height: 300px;
+}
+.date-activity{
+    color: white;
+    width: 15%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.date-activity>h3, #title-activity>h3{
+    margin: 0px;
+}
+.title-activity{
+    background-color: #428bca;
+    color: white;
+    width: 85%;
+    float: left;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.item-activity{
+ background-color: #2a6496!important;
+ }
+.line{
+    height: 5px;
+    background-color: white;
+    width: 100%;
+}

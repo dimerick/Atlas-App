@@ -18,4 +18,5 @@ var map = L.map('map', {
         icon: myIcon
     }
     L.marker(latlng, options).addTo(map);
+
 });

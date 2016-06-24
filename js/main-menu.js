@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   $('#cssmenu > ul > li:has(ul)').addClass("has-sub");
 
   $('#cssmenu > ul > li > a').click(function() {

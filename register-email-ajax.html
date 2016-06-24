@@ -1,30 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Atlas App</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/leaflet.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-</head>
-<body>
-<div class="container-fluid">
-<div class="row">
-    <div class="col-xs-3"></div>
-    <div class="col-xs-6">
-
-        <section id="main-section">
-
             <div class="row">
                 <div class="col-xs-12">
-                    <section id="register-email">
+                    <section id="register-email" class="animated bounceInDown">
                         <div class="row">
                             <div class="col-xs-12">
                                 <section id="head-page">
-                                    <i class="fa fa-angle-left pull-left fa-2x"></i>
+                                    <i class="fa fa-angle-left pull-left fa-2x return-index-invited"></i>
                                     <h3>REGISTRO</h3>
                                 </section>
                             </div>
@@ -60,6 +40,7 @@
                                             <div class="col-sm-10">
                                                 <div><p>Arrastre el icono hasta su ubicacion</p></div>
                                                 <div id="map"></div>
+                                                <script src="js/leaflet.js"></script>
                                             </div>
                                         </div>
 
@@ -119,7 +100,7 @@
 
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" class="btn btn-default">Registrarme</button>
+                                                <button type="submit" id="btn-register" class="btn btn-default">Registrarme</button>
                                             </div>
                                         </div>
                                     </form>
@@ -131,20 +112,3 @@
                 </div>
             </div>
 
-
-
-
-        </section>
-    </div>
-    <div class="col-xs-3"></div>
-
-    </div>
-</div>
-</div>
-
-</body>
-<script src="js/jquery-2.1.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/leaflet.js"></script>
-<script src="js/map.js"></script>
-</html>

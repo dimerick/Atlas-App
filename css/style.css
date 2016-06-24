@@ -69,3 +69,19 @@
     background-color: white;
     width: 100%;
 }
+#menu{
+    position: absolute;
+    display: none;
+}
+#main-section{
+    overflow-x: hidden;
+}
+#contact-form{
+    padding: 20px;
+}
+#info-contact{
+    text-align: center;
+}
+#info-contact>h3{
+    margin-top: 0px;
+}

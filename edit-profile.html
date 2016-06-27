@@ -1,11 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atlas App</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/leaflet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+
+        <section id="main-section">
+
             <div class="row">
                 <div class="col-xs-12">
                     <section id="register-email" class="animated bounceInDown">
                         <div class="row">
                             <div class="col-xs-12">
                                 <section id="head-page">
-                                    <i class="fa fa-angle-left pull-left fa-2x return-index-invited"></i>
-                                    <h3>REGISTRO</h3>
+                                    <a href="index-invited.html"><i class="fa fa-angle-left pull-left fa-2x"></i></a>
+                                    <h3>EDITAR MI PERFIL</h3>
                                 </section>
                             </div>
                         </div>
@@ -13,25 +33,25 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <section id="form-register">
-                                    <form class="form-horizontal" role="form">
+                                    <form class="form-horizontal" role="form" action="register-successful.html">
                                         <div class="form-group">
-                                            <label for="input1" class="col-sm-2 control-label">Organizacion</label>
+                                            <label for="input1" class="col-sm-2 control-label">Nombre</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="input1" placeholder="Nombre Organizacion">
+                                                <input type="text" value="Corporacion Casa Mia" class="form-control" id="input1" placeholder="Nombre Organizacion">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="input2" class="col-sm-2 control-label">Email</label>
                                             <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="input2" placeholder="Email organizacion">
+                                                <input type="email" value="direccion@corpcasamia.org" class="form-control" id="input2" placeholder="Email organizacion" disabled>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="input3" class="col-sm-2 control-label">Ciudad</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="input3" placeholder="Cudad">
+                                                <input type="text" value="Medellin" class="form-control" id="input3" placeholder="Ciudad">
                                             </div>
                                         </div>
 
@@ -40,7 +60,6 @@
                                             <div class="col-sm-10">
                                                 <div><p>Arrastre el icono hasta su ubicacion</p></div>
                                                 <div id="map"></div>
-                                                <script src="js/leaflet.js"></script>
                                             </div>
                                         </div>
 
@@ -48,13 +67,13 @@
                                             <label class="col-sm-2 control-label">Categorias</label>
                                             <div class="col-sm-10">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Ambiental
+                                                    <input type="checkbox" id="inlineCheckbox1" checked value="option1"> Ambiental
                                                 </label>
                                                 <label class="checkbox-inline">
                                                     <input type="checkbox" id="inlineCheckbox2" value="option1"> Arte
                                                 </label>
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" id="inlineCheckbox3" value="option2"> Derechos Humanos
+                                                    <input type="checkbox" id="inlineCheckbox3" checked value="option2"> Derechos Humanos
                                                 </label>
                                                 <label class="checkbox-inline">
                                                     <input type="checkbox" id="inlineCheckbox4" value="option3"> Genero y Sexualidad
@@ -65,14 +84,14 @@
                                         <div class="form-group">
                                             <label for="input4" class="col-sm-2 control-label">No integrantes</label>
                                             <div class="col-sm-10">
-                                                <input type="number" min="1" class="form-control" id="input4" placeholder="Integrantes activos en el proceso">
+                                                <input type="number" value="12" min="1" class="form-control" id="input4" placeholder="Integrantes activos en el proceso">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="input5" class="col-sm-2 control-label">Descripcion</label>
                                             <div class="col-sm-10">
-                                                <textarea id="input5" cols="68" rows="10"></textarea>
+                                                <textarea id="input5" cols="68" rows="10"> La Corporación Casa Mía es una iniciativa comunitaria creada por un grupo de jóvenes, que en el año de 1994 se unieron con el objetivo de buscar consensos y acuerdos que permitieran hallar soluciones pacíficas, para detener la avanzada de guerra y muerte en el barrio Santander, noroccidente de Medellín.</textarea>
                                             </div>
                                         </div>
 
@@ -80,6 +99,7 @@
                                             <label class="col-sm-2 control-label">Foto o Logo</label>
                                             <div class="col-sm-10">
                                                 <input accept="image/*" class="form-control" name="foto" type="file">
+                                                <input type="checkbox" id="" value="option3"> Conservar foto anterior
                                             </div>
                                         </div>
 
@@ -100,7 +120,7 @@
 
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" id="btn-register" class="btn btn-default">Registrarme</button>
+                                                <button type="submit" class="btn btn-default">Guardar</button>
                                             </div>
                                         </div>
                                     </form>
@@ -112,3 +132,20 @@
                 </div>
             </div>
 
+
+
+
+        </section>
+    </div>
+    <div class="col-xs-3"></div>
+
+    </div>
+</div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/map.js"></script>
+</html>

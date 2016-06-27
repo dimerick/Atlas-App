@@ -17,40 +17,59 @@
     <div class="col-xs-6">
 
         <section id="main-section">
+
             <div class="row">
                 <div class="col-xs-12">
-                    <section id="recovery-password" class="animated bounceInDown">
+                    <section id="register-email" class="animated bounceInDown">
                         <div class="row">
                             <div class="col-xs-12">
                                 <section id="head-page">
-                                    <a href="start-session.html"><i class="fa fa-angle-left pull-left fa-2x return-start-session"></i></a>
-                                    <h3>RECUPERAR CONTRASEÑA</h3>
+                                    <a href="my-publications.html"><i class="fa fa-angle-left pull-left fa-2x"></i></a>
+                                    <h3>CANCELAR EVENTO</h3>
                                 </section>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-xs-12">
                                 <section id="form-register">
-                                    <form class="form-horizontal" role="form">
+                                    <form class="form-horizontal" role="form" action="register-successful.html">
                                         <div class="form-group">
-                                            <label for="input2" class="col-sm-2 control-label">Email</label>
+                                            <label class="col-sm-2 control-label"></label>
                                             <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="input2" placeholder="Email organizacion">
+                                                <p><b>Cual es el motivo de la cancelacion?</b></p>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Falta de recursos
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" id="inlineCheckbox2" value="option1"> Violencia
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" id="inlineCheckbox3" value="option2"> Baja asistencia
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" id="inlineCheckbox4" value="option3"> Otros
+                                                </label>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                       <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" class="btn btn-default btn-primary">Enviar</button>
+                                                <button type="submit" class="btn btn-default btn-block btn-primary">Cancelar Evento</button>
                                             </div>
                                         </div>
                                     </form>
                                 </section>
                             </div>
                         </div>
+
                     </section>
                 </div>
             </div>
+
+
+
+
         </section>
     </div>
     <div class="col-xs-3"></div>
@@ -64,4 +83,5 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/leaflet.js"></script>
 <script src="js/map.js"></script>
+<script src="js/create-event.js"></script>
 </html>
